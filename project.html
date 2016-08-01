@@ -36,6 +36,14 @@
     #vorder{
       border-radius: 0%;
     }
+    img{
+      width:3em;
+      height: 3em;
+      border-radius: 3%;
+    }
+    a{
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +58,47 @@
     </ul>
   </div>
 </nav>
-  
+<div class="container">
+  <h2>ACA Sem Project</h2>
+  <hr>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#1">Read</button>
+  <div id="1" class="collapse">
+    <br>
+    ACA(Association for Computer Activities) offers Computer Science students in their 2nd sem a group project. The topic that I got was(my first preference) "Learn parallel programming and make a face recognition app based on it". The project utilised the tremendous power of parallel programming in boosting the speed of such apps which ofcourse would be a failure in serial code. We practised our way through the sem , working in udactiy, but we were short of time: to learn was too much and application designing would have pulled a lot of time. With discussion with our mentors, we decided to work in the new topic to create an "N-Body Simulator" which uses open AC too.<br>For those who dont know whats an N-Body Simulation, google it up beacuse its very interesting !<br>
+    The project was a successful one, we got well acquainted the working of gpu hardware and the parallel programming regime.<br>
+    Feel free to contact me for any updation.<br>
+    Here is the github link for the project<br>
+    <a href="http://www.github.com" target="_blank"><img src="./github.png"></a>
+    <hr>
+  </div>
+  <hr>
+  <h2>Summer Project</h2>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#2">Read</button>
+  <div id="2" class="collapse">
+    <br>
+    The Summer Project can say was the application of what learned in the ACA project, a step ahead of intensive coding for the gpu in CUDA based architecture. The same group as of ACA tackled the project under Professor Mahendra Verma. The project topic was to create a multigird solver for possions equation. The parallel regime was used to get the 3 dimension grid of unknown values in a jacobian iterator method (physics stuff).<br>The project was very important, as it made things clear about parallel programming and erased much of the doubts that had crept in the previous project.Very truely said, one must get into the swimming pool to know whether there are crocodiles in there :P.<br>
+    Contact me to know more about this.<br>
+    Here is the github link for the project<br>
+    <a href="https://github.com/AkashKrDutta/multigrid" target="_blank"><img src="./github.png"></a>
+    <hr>
+  </div>
+  <hr>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("button").click(function(){
+      if($(this).text()=="Read")
+      {
+        $(this).empty();
+        $(this).text("Close");
+      }
+      else
+      {
+        $(this).empty();
+        $(this).text("Read");
+      }
+    })
+  })
+</script>
 </body>
 </html>
